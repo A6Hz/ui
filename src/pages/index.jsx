@@ -4,7 +4,7 @@ import login from "./login";
 import history from "../helpers/history"
 import Layout from "./layout";
 import home from "./home";
-
+import empleados from "./empleados"
 // eslint-disable-next-line react/display-name
 export default () => (
   <Router history={history}>
@@ -14,6 +14,7 @@ export default () => (
 
       <Layout>
         <Route exact path="/home" component={home} />
+        <Route exact path="/empleados" component={empleados} />
       </Layout>
     </Switch>
   </Router>
